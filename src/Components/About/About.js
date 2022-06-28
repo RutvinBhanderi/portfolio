@@ -8,6 +8,7 @@ import {
   AboutRight,
 } from "./About.style";
 import { motion } from "framer-motion";
+import myImg from "../../Assets/myImg.jpg";
 const stagger = {
   show: {
     transition: {
@@ -52,7 +53,7 @@ const About = () => {
           <AboutLeft variants={imageVariant}>
             <div className='about__image'>
               <motion.div>
-                <img src='/myImg.jpg' alt='' />
+                <img src={myImg} alt='' />
               </motion.div>
             </div>
           </AboutLeft>

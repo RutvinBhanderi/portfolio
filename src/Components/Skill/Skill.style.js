@@ -73,6 +73,7 @@ export const SkillDiv = styled(motion.div)`
       justify-content: space-between;
       gap: 0.5rem;
       align-items: center;
+      cursor:pointer;
       flex: 1;
       .Icon {
         flex: 0.9;
@@ -99,7 +100,7 @@ export const SkillDiv = styled(motion.div)`
       position: absolute;
       bottom: 0;
       left: 0;
-      background: url("/wave.png");
+      background: ${(props) => `url(${props.wave})`};
       transition:1s ease;
       width: ${(props) => props.width}%;
       height: ${(props) => props.height}%;

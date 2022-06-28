@@ -3,7 +3,7 @@ import { SkillDiv } from "./Skill.style";
 import { DiMongodb } from "react-icons/di";
 import { IoLogoNodejs } from "react-icons/io";
 import { SiExpress } from "react-icons/si";
-
+import wave from "../../Assets/wave.png";
 const SkillCard = ({ x }) => {
   const skillVariant = useRef({
     hidden: {
@@ -29,6 +29,7 @@ const SkillCard = ({ x }) => {
       height={height.h}
       width={height.w}
       variants={skillVariant.current}
+      wave={wave}
     >
       <h3>Back End</h3>
       <div className='skills'>

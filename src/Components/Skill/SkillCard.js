@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { SkillDiv } from "./Skill.style";
 import { DiReact, DiHtml5, DiCss3 } from "react-icons/di";
 import { SiRedux } from "react-icons/si";
-
+import wave from "../../Assets/wave.png";
 const SkillCard = ({ x }) => {
   const skillVariant = useRef({
     hidden: {
@@ -28,6 +28,7 @@ const SkillCard = ({ x }) => {
       height={height.h}
       width={height.w}
       variants={skillVariant.current}
+      wave={wave}
     >
       <h3>Front End</h3>
       <div className='skills'>

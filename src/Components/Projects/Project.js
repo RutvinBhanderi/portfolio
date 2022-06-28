@@ -1,7 +1,8 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import { Container, Wrapper, Heading, Work } from "./Project.style";
-
+import SocialMedia from "../../Assets/SOCIALMEDIA.jpg";
+import ecommerce from "../../Assets/ecommerce.png";
 const stagger = {
   show: {
     transition: {
@@ -92,13 +93,13 @@ const Project = () => {
           <ProjectCard
             variant={imageVariant}
             title='Social Media App'
-            src='/SOCIALMEDIA.jpg'
+            src={SocialMedia}
             link='https://github.com/RutvinBhanderi/SocialMedia'
           />
           <ProjectCard
             variant={imageVariant}
             title='Ecommerce App'
-            src='/ecommerce.png'
+            src={ecommerce}
             link='https://github.com/RutvinBhanderi/ECOMMERCE'
           />
           {/* <ProjectCard variant={imageVariant} />
